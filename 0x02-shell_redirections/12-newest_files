@@ -1,2 +1,2 @@
-B#!/bin/bash
-ls -lt | grep -v / | head | cut -b 42-
+#!/bin/bash
+ls -ltp | grep -v */ | head | cut -b 42-
