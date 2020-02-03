@@ -1,2 +1,2 @@
-B#!/bin/bash
-find . -empty -printf "%f\n" | sort | cat
+#!/bin/bash
+find . -empty -printf "%f\n" | sort
