@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Displays the time for 12 hours and 59 minutes
+MINMIN=1
+MAXHR=12
+m=1
+h=0
+while [ $h -le $MAXHR ]
+do
+	case $m in
+		1)
+			echo "Hour: $h"
+			echo $m
+			m=$((m+1))
+			;;
+		59)
+			echo $m
+			m=$((MINMIN))
+			h=$((h+1))
+			;;
+		*)
+			echo $m
+			m=$((m+1))
+			;;
+	esac
+done
