@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays contents of current directory in a list format, with formatting
+for i in *; do
+	echo "${i#*-}"
+done
