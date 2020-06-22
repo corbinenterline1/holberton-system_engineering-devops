@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Kills 4-to_infinity_and_beyond process
+for i in $(ps -aux | awk '/4-to_infinity_and_beyond/ {print $2}' ); do
+	kill "$i"
+done
