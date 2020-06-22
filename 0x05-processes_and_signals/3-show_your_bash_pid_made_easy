@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays PID and process name of processes with bash
+for i in $(pidof bash); do
+	echo "$i bash"
+done
