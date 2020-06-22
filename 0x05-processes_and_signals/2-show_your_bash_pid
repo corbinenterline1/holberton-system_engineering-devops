@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays processes with bash keyword
+# shellcheck disable=SC2009
+ps -aux | awk '/bash/'
