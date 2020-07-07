@@ -1,4 +1,6 @@
  # 0x05 - System engineering & DevOps - Regular expression
+Task # | Short Description
+-------|------------
 [Task 0](0-simply_match_holberton.rb) | REGEX must match `Holberton`.
 [Task 1](1-repetition_token_0.rb) | Find REGEX that will match the example cases.
 [Task 2](2-repetition_token_1.rb) | Find REGEX that will match the example cases.
