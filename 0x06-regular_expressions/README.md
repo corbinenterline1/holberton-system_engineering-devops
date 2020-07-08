@@ -1,4 +1,4 @@
- # 0x05 - System engineering & DevOps - Regular expression
+ # 0x06 - System engineering & DevOps - Regular expression
 Task # | Short Description
 -------|------------
 [Task 0](0-simply_match_holberton.rb) | REGEX must match `Holberton`.
