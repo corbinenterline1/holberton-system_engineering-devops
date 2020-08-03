@@ -1,3 +1,4 @@
+# creates new file resource
 file { '/tmp/holberton':
   content => 'I love Puppet',
   group   => 'www-data',
