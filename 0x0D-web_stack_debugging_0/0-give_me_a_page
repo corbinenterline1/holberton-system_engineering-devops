@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Have you tried rebooting your Apache sir?
-sudo service apache2 restart
+sudo service apache2 start
