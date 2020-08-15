@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#  set up HAproxy load balancer!
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+sudo set -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
+sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
+sudo sed -i "$ a\listen webapp 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver gc-1692-web-01-1596432771 34.75.121.144:80 check\n\tserver 1692-web-02 54.227.55.35:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy start
