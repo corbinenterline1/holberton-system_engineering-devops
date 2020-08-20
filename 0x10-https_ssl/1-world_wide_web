@@ -2,7 +2,6 @@
 # Displays information about subdomains, if no domain
 # then www, lb-01, web-01, web-02, in that order.
 # shellcheck disable=SC2086
-dom="$1"
 
 
 if [ "$#" -eq 2 ]
