@@ -1,6 +1,6 @@
  # 0x14 - MySQL
-Task # | Short Description
--------|------------
+Task # | File | Short Description |
+| ---- | ---- | ---- |
 | 0.  | [N/A](https://github.com/corbinenterline1/holberton-system_engineering-devops/tree/master/0x14-mysql) | Install MySQL 5.7.x on both web servers. |
 | 1.  | [N/A](https://github.com/corbinenterline1/holberton-system_engineering-devops/tree/master/0x14-mysql) | Create username & passwords for both MySQL databases. |
 | 2.  | [N/A](https://github.com/corbinenterline1/holberton-system_engineering-devops/tree/master/0x14-mysql) | Add some replicants to a table in a database. |
