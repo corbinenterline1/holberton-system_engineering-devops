@@ -7,7 +7,6 @@ import sys
 
 if __name__ == "__main__":
     taskdic = {}    # Final form for file writing
-    tasks = []  # List of tasks
     filename = "todo_all_employees.json"
     users = requests.get(
             "https://jsonplaceholder.typicode.com/users").json()
@@ -19,6 +18,7 @@ if __name__ == "__main__":
         todos = requests.get(
                 "https://jsonplaceholder.typicode.com/todos?userId={}"
                 .format(eid)).json()
+        tasks = []
         for task in todos:
             frmobj = {}     # formatted object
             frmobj['task'] = task.get('title')
@@ -26,5 +26,5 @@ if __name__ == "__main__":
             frmobj['username'] = unm
             tasks.append(frmobj)
         taskdic[eid] = tasks
-        with open(filename, 'w') as jsonf:
-            json.dump(taskdic, jsonf)
+    with open(filename, 'w') as jsonf:
+        json.dump(taskdic, jsonf)
