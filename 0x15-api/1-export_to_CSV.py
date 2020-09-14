@@ -12,12 +12,12 @@ if __name__ == "__main__":
     reqname = requests.get(
             "https://jsonplaceholder.typicode.com/users/{}"
             .format(eid)).json()
-    enm = reqname.get('name')   # Employee Name
+    unm = reqname.get('username')   # Employee Name
     todos = requests.get(
             "https://jsonplaceholder.typicode.com/todos?userId={}"
             .format(eid)).json()
     with open(filename, 'w') as csvf:
         writer = csv.writer(csvf, quoting=csv.QUOTE_ALL)
         for task in todos:
-            writer.writerow([eid, enm,
+            writer.writerow([eid, unm,
                             task.get('completed'), task.get('title')])
