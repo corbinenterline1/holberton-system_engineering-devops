@@ -9,7 +9,7 @@ if __name__ == "__main__":
     taskdic = {}    # Final form for file writing
     tasks = []  # List of tasks
     eid = sys.argv[1]
-    filename = "{}.csv".format(eid)
+    filename = "{}.json".format(eid)
     reqname = requests.get(
             "https://jsonplaceholder.typicode.com/users/{}"
             .format(eid)).json()
