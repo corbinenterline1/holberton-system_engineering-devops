@@ -1,9 +1,9 @@
 # fixes number of simultaneous requests for NGINX
-exec { 'reqfix':
+exec { 'fix':
   path    => ['/usr/bin/', '/bin/'],
-  command => 'echo ULIMIT=\"-n 4096\" >> /etc/default/nginx',
+  command => "sed -i 's/15/3000/g' /etc/default/nginx"
 }
-exec { 'always':
+exec { 'restart':
   provider => 'shell',
-  command  => 'sudo service nginx restart',
+  command  => 'sudo service nginx restart'
 }
